@@ -1,7 +1,10 @@
 {
   "manifest_version": 2,
   "name": "Get UofT Access",
-  "version": "0.1",
+  "description": "A Chrome extension that automatically redirects webapge to myaccess.utoronto.ca with one-click. It may take five seconds to copy and paste myaccess.utoronto.ca in your address bar, but now it is just one second!",
+  "author": "Pan Chen",
+  "version": "0.85",
+  "homepage_url": "https://github.com/ChenPanXYZ/Get-UofT-Access",
   "content_scripts": [
     {
       "matches": [
@@ -18,6 +21,14 @@
     ]
   },
   "browser_action": {
-    "default_icon": "logo.png"
-  }
+    "default_icon": "logo128.png"
+  },
+  "icons": {
+    "16": "logo16.png",
+    "48": "logo48.png",
+    "128": "logo128.png"
+  },
+  "permissions": [
+    "tabs"
+  ]
 }
